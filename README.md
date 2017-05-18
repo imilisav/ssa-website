@@ -23,5 +23,3 @@ Things you may want to cover:
 
 * ...
 =======
-
->>>>>>> ee1ea467618db4d27e6256cf25a060e14b5a0298
