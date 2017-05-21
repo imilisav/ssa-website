@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SsaWebsite</title>
+    <title>Serbian Student Association</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
   </head>
 
   <body>
+    <header>
+      <h1>SSA</h1>
+      <ul>
+        <li><%= link_to 'home', core_controller_home_path %></li>
+        <li><%= link_to 'about', core_controller_about_path %></li>
+        <li><%= link_to 'contact', core_controller_contact_path %></li>
+        <li><%= link_to 'constitution', core_controller_constitution_path %></li>
+      </ul>
+    </header>
     <%= yield %>
   </body>
 </html>

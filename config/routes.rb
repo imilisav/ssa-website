@@ -1,3 +1,13 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  get 'core_controller/about'
+
+  get 'core_controller/contact'
+
+  get 'core_controller/constitution'
+
+  get 'core_controller/home'
+
+  root 'core_controller#home'
+
 end
