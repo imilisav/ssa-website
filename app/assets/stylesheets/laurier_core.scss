@@ -1,3 +1,38 @@
 // Place all the styles related to the LaurierCore controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$purple: #330072;
+$yellow: #FFC300;
+
+#laurier-nav {
+  background-color: $purple;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: lighter;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+  }
+
+  li:hover {
+    background-color: $yellow;
+
+    a {
+      color: $purple;
+    }
+  }
+
+  a {
+    color: $yellow;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+}

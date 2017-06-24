@@ -1,3 +1,38 @@
 // Place all the styles related to the WaterlooCore controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$purple: #330072;
+$yellow: #FFC300;
+
+#waterloo-nav {
+  background-color: $yellow;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: lighter;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+  }
+
+  li:hover {
+    background-color: black;
+
+    a {
+      color: $yellow;
+    }
+  }
+
+  a {
+    color: black;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+}
