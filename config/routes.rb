@@ -18,4 +18,5 @@ Rails.application.routes.draw do
   get '/wlu/about', to: 'laurier_core#about'
   get '/wlu/contact', to: 'laurier_core#contact'
   get '/wlu/constitution', to: 'laurier_core#constitution'
+
 end
