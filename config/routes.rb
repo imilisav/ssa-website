@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # Routes for the super user
+  devise_for :admins
   # Routes for the admin
 
   #routes for all visitors

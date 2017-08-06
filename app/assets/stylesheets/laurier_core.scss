@@ -3,3 +3,69 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $purple: #330072;
 $yellow: #FFC300;
+$white: #FFFFFF;
+
+#wlu-body {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: lighter;
+
+  h1 {
+    margin-left: 20px;
+  }
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-150px, -200px);
+    z-index: -1;
+  }
+
+  div {
+    height: 400px;
+    width: 400px;
+    background-color: lightpink;
+    display: inline;
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+#wlu-header {
+  background-color: $purple;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: lighter;
+
+  img {
+    padding: 10px 20px;
+  }
+}
+
+#laurier-nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+  }
+
+  li:hover {
+    background-color: $yellow;
+
+    a {
+      color: $purple;
+    }
+  }
+
+  a {
+    color: $yellow;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+}

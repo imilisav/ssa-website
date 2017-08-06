@@ -3,9 +3,46 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $purple: #330072;
 $yellow: #FFC300;
+$black: #000000;
+
+#uw-body {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: lighter;
+
+  h1 {
+    margin-left: 20px;
+  }
+  
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-150px, -200px);
+    z-index: -1;
+  }
+
+  div {
+    height: 400px;
+    width: 400px;
+    background-color: lightpink;
+    display: inline;
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+#uw-header {
+  background-color: $black;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: lighter;
+
+  img {
+    padding: 10px 20px;
+  }
+}
 
 #waterloo-nav {
-  background-color: $yellow;
+  background-color: $black;
   font-family: 'Helvetica', sans-serif;
   font-weight: lighter;
 
@@ -22,15 +59,15 @@ $yellow: #FFC300;
   }
 
   li:hover {
-    background-color: black;
+    background-color: $yellow;
 
     a {
-      color: $yellow;
+      color: $black;
     }
   }
 
   a {
-    color: black;
+    color: $yellow;
     display: block;
     padding: 10px 20px;
     text-decoration: none;
