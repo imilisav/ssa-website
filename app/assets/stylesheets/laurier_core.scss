@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $purple: #330072;
-$yellow: #FFC300;
+$yellow: #FFCC00;
 $white: #FFFFFF;
 
 #wlu-body {
@@ -14,10 +14,10 @@ $white: #FFFFFF;
   }
 
   img {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
-    transform: translate(-150px, -200px);
+    transform: translate(-202px, -126px);
     z-index: -1;
   }
 

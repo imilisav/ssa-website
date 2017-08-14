@@ -2,22 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $purple: #330072;
-$yellow: #FFC300;
+$yellow: #FFCC00;
 $black: #000000;
 
 #uw-body {
-  font-family: 'Helvetica', sans-serif;
-  font-weight: lighter;
+  font-family: 'Helvetica Neue', sans-serif;
 
   h1 {
+    font-weight: 300;
     margin-left: 20px;
   }
-  
+
   img {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
-    transform: translate(-150px, -200px);
+    transform: translate(-133px, -189px);
     z-index: -1;
   }
 
@@ -38,6 +38,13 @@ $black: #000000;
 
   img {
     padding: 10px 20px;
+  }
+
+  img:last-child {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    height: 7em;
   }
 }
 
@@ -71,5 +78,24 @@ $black: #000000;
     display: block;
     padding: 10px 20px;
     text-decoration: none;
+  }
+}
+
+.description {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: rgba(255,195,0,0.6);
+  font-weight: 300;
+
+  h2 {
+    font-weight: 400;
+  }
+
+  small {
+    font-style: italic;
+    font-size: .7em;
   }
 }
