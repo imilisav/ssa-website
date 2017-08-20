@@ -20,15 +20,6 @@ $black: #000000;
     transform: translate(-133px, -189px);
     z-index: -1;
   }
-
-  div {
-    height: 400px;
-    width: 400px;
-    background-color: lightpink;
-    display: inline;
-    float: left;
-    margin-left: 20px;
-  }
 }
 
 #uw-header {
@@ -68,7 +59,7 @@ $black: #000000;
   li:hover {
     background-color: $yellow;
 
-    a {
+    a, i {
       color: $black;
     }
   }
@@ -79,23 +70,83 @@ $black: #000000;
     padding: 10px 20px;
     text-decoration: none;
   }
+
+  i {
+    color: $yellow;
+  }
 }
 
-.description {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  padding: 5px 10px;
+.description-uw {
+  margin: 20px 20px 0 20px;
+  padding-bottom: 20px;
   border-radius: 8px;
-  background-color: rgba(255,195,0,0.6);
+  background-color: rgba(255,195,0,0.5);
   font-weight: 300;
 
-  h2 {
+  h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 20px;
     font-weight: 400;
+  }
+
+  h2 {
+    border-bottom: black solid 1px;
+  }
+
+  p, ul, ol {
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  p {
+    padding: 20px 20px 0 20px;
+  }
+
+  ul, ol {
+    margin: 20px 0 0 0;
   }
 
   small {
     font-style: italic;
     font-size: .7em;
+  }
+}
+
+.section-uw {
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 8px;
+  margin: 10px 15px 0 15px;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: white;
+    padding-bottom: 0;
+  }
+
+  h4:last-child {
+    padding-bottom: 20px;
+  }
+
+  p, ul, ol {
+    color: white;
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  p {
+    padding: 20px 20px 0 20px;
+
+    &:last-child {
+      padding-bottom: 20px;
+    }
+  }
+
+  ul, ol {
+    margin: 20px 0 0 0;
+
+    &:last-child {
+      padding-bottom: 20px;
+    }
   }
 }

@@ -7,10 +7,6 @@ class WaterlooCoreController < ApplicationController
     render "about"
   end
 
-  def contact
-    render "contact"
-  end
-
   def constitution
     render "constitution"
   end

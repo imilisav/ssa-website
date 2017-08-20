@@ -2,15 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $purple: #330072;
+$lightpurple: #9A6DD2;
 $yellow: #FFCC00;
 $white: #FFFFFF;
 
 #wlu-body {
-  font-family: 'Helvetica', sans-serif;
-  font-weight: lighter;
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
 
   h1 {
     margin-left: 20px;
+    font-weight: 300;
   }
 
   img {
@@ -21,20 +22,12 @@ $white: #FFFFFF;
     z-index: -1;
   }
 
-  div {
-    height: 400px;
-    width: 400px;
-    background-color: lightpink;
-    display: inline;
-    float: left;
-    margin-left: 20px;
-  }
 }
 
 #wlu-header {
   background-color: $purple;
-  font-family: 'Helvetica', sans-serif;
-  font-weight: lighter;
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-weight: 300;
 
   img {
     padding: 10px 20px;
@@ -68,4 +61,36 @@ $white: #FFFFFF;
     padding: 10px 20px;
     text-decoration: none;
   }
+}
+
+.section-wlu {
+  margin: auto 20px;
+  background-color: rgba(156, 111, 211, 0.5);
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+  border-radius: 8px;
+
+  h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 20px;
+    font-weight: 400;
+  }
+
+  h2 {
+    border-bottom: black solid 1px;
+  }
+
+  p, ul, ol {
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  p {
+    padding: 20px 20px 0 20px;
+  }
+
+  ul, ol {
+    margin: 20px 0 0 0;
+  }
+
 }

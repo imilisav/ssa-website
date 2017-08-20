@@ -3,14 +3,6 @@ class LaurierCoreController < ApplicationController
     render "home"
   end
 
-  def about
-    render "about"
-  end
-
-  def contact
-    render "contact"
-  end
-
   def constitution
     render "constitution"
   end
