@@ -6,43 +6,61 @@ $purple: #330072;
 $yellow: #FFC300;
 $white:  #FFFFFF;
 
-#core {
-  height: 100vh;
+div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   align-content: center;
+  height: 100vh;
 
-  section {
-    height: 100vh;
-    width: 50vw;
+  header {
+    position: relative;
+    border-bottom: solid lightgrey 1px;
 
-    a {
-      color: $yellow;
-      font-family: Helvetica, sans-serif;
-      font-weight: lighter;
-      text-decoration: none;
+    h1, h2 {
+      font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+      font-weight: 300;
+      text-align: center;
     }
   }
 
-  #waterloo-section {
-    background-color: $black;
+  #core {
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    align-content: center;
 
-    img {
+    section {
+      height: 100%;
       width: 50vw;
-    }
-  }
 
-  #laurier-section {
-    background-color: $white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+      a {
+        color: $yellow;
+        font-family: Helvetica, sans-serif;
+        font-weight: lighter;
+        text-decoration: none;
+      }
+    }
+
+    #waterloo-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 50vw;
+      }
+    }
+
+    #laurier-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-right: solid lightgrey 1px;
+    }
   }
 }
