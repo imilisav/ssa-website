@@ -11,7 +11,6 @@ div {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  height: 100vh;
 
   header {
     position: relative;
@@ -63,4 +62,8 @@ div {
       border-right: solid lightgrey 1px;
     }
   }
+}
+
+#core-container {
+  height: 100vh;
 }
