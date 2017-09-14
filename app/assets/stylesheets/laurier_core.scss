@@ -100,3 +100,23 @@ $white: #FFFFFF;
   }
 
 }
+
+#wlu-feeds-main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.wlu-news-feed {
+  background-color: rgba(156, 111, 211, 0.5);
+}
+
+.wlu-event-feed {
+  background-color: $purple;
+  color: $yellow;
+
+  h2 {
+    border-bottom: solid $yellow 1px;
+  }
+}

@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  get 'users/new'
-
-  # Routes for the admin
 
   #routes for all visitors
   get '/', to: 'core#home'

@@ -67,3 +67,88 @@ div {
 #core-container {
   height: 100vh;
 }
+
+.news-feed {
+  border-radius: 8px;
+  height: 100%;
+  width: 70%;
+  margin-left: 20px;
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-weight: 300;
+
+  h2, h3 {
+    font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+  }
+
+  h2 {
+    font-weight: 300;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    border-bottom: solid black 1px;
+  }
+
+  h3 {
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .post {
+    padding: 10px;
+    border-bottom: solid black 1px;
+
+    &:last-of-type {
+      border: none;
+    }
+  }
+
+  .post-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    h3:last-child {
+      font-weight: 300;
+    }
+  }
+
+  .post-footer {
+    text-align: right;
+
+    p {
+      margin: 0;
+    }
+  }
+
+}
+
+.event-feed {
+  border-radius: 8px;
+  margin: 0 20px;
+  width: 30%;
+
+  h2{
+    font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    font-weight: 300;
+  }
+
+  #event-feed-events {
+    p {
+      font-size: 32px;
+      font-weight: 500;
+    }
+  }
+
+  #event-feed-mission {
+    padding: 10px;
+  }
+}
