@@ -70,7 +70,7 @@ $white: #FFFFFF;
 }
 
 .section-wlu {
-  margin: auto 20px;
+  margin: 20px;
   background-color: rgba(156, 111, 211, 0.5);
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
   border-radius: 8px;
@@ -93,6 +93,10 @@ $white: #FFFFFF;
 
   p {
     padding: 20px 20px 0 20px;
+
+    &:last-of-type {
+      padding-bottom: 20px;
+    }
   }
 
   ul, ol {
